@@ -69,6 +69,8 @@ These are:
 
 
 ## Business Steps/Recovery
+### Business Steps
+
 The Business Process Layer focuses on decision rules and navigation within the automation. These rules are called steps and are used to direct the bot to move between various screens, and to take certain actions related to information that it has collected in previous get tasks. These actions will often lead to set tasks on a screen.
 
 - For each step in the business process, the following is defined:
@@ -80,7 +82,7 @@ The Business Process Layer focuses on decision rules and navigation within the a
   - Any messaging that should be displayed or delivered if the condition is true
 -
 
-#Recovery Steps
+### Recovery Steps
 Like the Business Process Layer, the Process Recovery Layer focuses on decision rules and navigation within the automation. However, these rules handled condition that occur when the normal step processes are not properly handled. Business rules should cover every expected occurrence that the bot can and should handle, but in those cases where they bot encounters something that is either not expected, or that cannot be handled, the Process Recovery Layer tells the bot what to do, and what steps to take next
 
 - For each step in the business process, at least one recovery process step should be established:
