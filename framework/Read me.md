@@ -43,85 +43,54 @@
 
 <!-- ABOUT THE PROJECT -->
 ## Beet.Framework
-![alt text](https://github.com/jyoung122/swaddlefy/edit/main/framework/images/fw.png)
-At Swaddle, automation is our passion. Ever since we started building automations, back in 2001, we have strived to make the stongest most productive automations. Over the years we have developed numerous tools and methodolgies to automate some of the routine development tasks. By automating these routine checks and corrections, we were able to speed up production, freeing our team members to grow, discover, and create.
-
-Swaddle to the next step in that journey. Our mission is to make automation development a more productive and enjoyable experience for everyone.
+![alt text](https://github.com/jyoung122/swaddlefy/blob/b6a072d96ab850cead6163715f0c70b09628725d/framework/images/fw.PNG)
 
 
 
+## Integration
+The Definition Layer begins the actual work of the bot building process. It collects information about the various applications, screens, and elements from those screens that are used by the bot. The information includes:
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+- For each application use by the bot
+  - For each screen, page, or panel use from the application
+    - Identify each field from which data will be retrieved or viewed
+    - Identify each field into which data will be entered or modified
+    - Identify each button or control (including tabs, etc.) that will be activated
 
-
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-### How We Help
-
-| **Feature** | Benefit |
-| --- | --- |
-| **Beet.Framework** | Beetle is a minimal and flexible RPA framework that provides a robust set of features for RPA Development. |
-| **Beet.Wizards** | Use code wizards to handle template code faster. Use code formmatting to introduce standards.|
-| **Beet.Walker** | Identify and help eliminate errors and code smells. |
-| **Beet.Docs** | Generate accurate just in time technical design documents from source code. |
+This information is collected repetitively for each screen in each application until the entire automation is mapped.
 
 
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-### Installation
-
-### UiPath
-
-1. Get a Key at [https://example.com](https://example.com)
-
-2. Download the package from [https://example.com](https://example.com)
-
-3. Install the nuget packages
-
-4. Enter your Key in new Swaddle section added to UiPath backstage
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+## Task
+The Task Layer defines who each of the items on a screen will be used. Specifically, every item can be used in one of four, and only four, specific ways. 
+These are: 
+* PUT Data – placing data onto the screen, and includes modifying existing data; 
+* GET Data – retrieving or viewing data from the screen; 
+* ACTION – using a control (e.g. a button) to cause another action to occur; 
+* START – Initiating new action based on the completion of the display of an item on the page. The information collected for these elements includes:
 
 
+## Business Steps/Recovery
+The Business Process Layer focuses on decision rules and navigation within the automation. These rules are called steps and are used to direct the bot to move between various screens, and to take certain actions related to information that it has collected in previous get tasks. These actions will often lead to set tasks on a screen.
 
-<!-- ROADMAP -->
-## Roadmap
+- For each step in the business process, the following is defined:
+  - A name for the step, along with a description
+  - A name for the assessment performed by the step
+  - The nature of the assessment condition being evaluated
+  - The resultant assessment condition(s) that is expected
+  - The next step to follow (action to be taken) if the condition is true
+  - Any messaging that should be displayed or delivered if the condition is true
+-
 
-- [x] UiPath
-  - [x] Beet.Framework
-  - [x] Beet.Wizards
-  - [x] Beet.Walkers
-  - [x] Beet.Docs   
-- [ ] Blue Prism
-  - [X] Beet.Framework
-  - [ ] Beet.Wizards
-  - [ ] Beet.Walkers
-  - [ ] Beet.Docs   
-- [ ] Automation Anywhere
-  - [ ] Beet.Framework
-  - [ ] Beet.Wizards
-  - [ ] Beet.Walkers
-  - [ ] Beet.Docs   
-- [ ] Kryon
-  - [ ] Beet.Framework
-  - [ ] Beet.Wizards
-  - [ ] Beet.Walkers
-  - [ ] Beet.Docs 
+#Recovery Steps
+Like the Business Process Layer, the Process Recovery Layer focuses on decision rules and navigation within the automation. However, these rules handled condition that occur when the normal step processes are not properly handled. Business rules should cover every expected occurrence that the bot can and should handle, but in those cases where they bot encounters something that is either not expected, or that cannot be handled, the Process Recovery Layer tells the bot what to do, and what steps to take next
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+- For each step in the business process, at least one recovery process step should be established:
+  - A name for the recovery step, along with a description
+  - The name the assessment with which the recovery is associated
+  - The resultant recovery condition(s) that are expected
+  - The next step to follow (action to be taken) if the recovery condition occurs
+  - Any messaging that should be displayed or delivered if the condition is occurs
+- In some cases the automation will end, in some cases it will be sent for attempted autocorrection and potentially continue, in other cases, it could be sent to a human-in-the-loop operator for correction, then resume the automation.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
