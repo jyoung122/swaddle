@@ -43,7 +43,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## Beet.Framework
-
+![alt text](https://github.com/jyoung122/swaddlefy/edit/main/framework/images/fw.png)
 At Swaddle, automation is our passion. Ever since we started building automations, back in 2001, we have strived to make the stongest most productive automations. Over the years we have developed numerous tools and methodolgies to automate some of the routine development tasks. By automating these routine checks and corrections, we were able to speed up production, freeing our team members to grow, discover, and create.
 
 Swaddle to the next step in that journey. Our mission is to make automation development a more productive and enjoyable experience for everyone.
