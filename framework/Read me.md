@@ -43,7 +43,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## Beet.Framework
-![alt text](https://github.com/jyoung122/swaddlefy/blob/b6a072d96ab850cead6163715f0c70b09628725d/framework/images/fw.PNG)
+![alt text](/framework/images/fw.PNG)
 
 
 ## Integration
