@@ -46,27 +46,34 @@
 ![alt text](https://github.com/jyoung122/swaddlefy/blob/b6a072d96ab850cead6163715f0c70b09628725d/framework/images/fw.PNG)
 
 
-
 ## Integration
 The Integration Layer begins the actual work of the bot building process. It collects information about the various applications, screens, and elements from those screens that are used by the bot. The information includes:
 
-- For each application use by the bot
-  - For each screen, page, or panel use from the application
-    - Identify each field from which data will be retrieved or viewed
-    - Identify each field into which data will be entered or modified
-    - Identify each button or control (including tabs, etc.) that will be activated
+- For each application use by the bot, one of the below integration.
+  * PUT Data – placing data onto the screen, and includes modifying existing data; 
+  * GET Data – retrieving or viewing data from the screen; 
+  * ACTION – using a control (e.g. a button) to cause another action to occur; 
+  * START/STOP – Starting or stoping the applicataion
+  * EXIST - Determine if a screen or object is available
 
 This information is collected repetitively for each screen in each application until the entire automation is mapped.
 
 
 ## Task
-The Task Layer defines who each of the items on a screen will be used. Specifically, every item can be used in one of four, and only four, specific ways. 
-These are: 
-* PUT Data – placing data onto the screen, and includes modifying existing data; 
-* GET Data – retrieving or viewing data from the screen; 
-* ACTION – using a control (e.g. a button) to cause another action to occur; 
-* START – Initiating new action based on the completion of the display of an item on the page. The information collected for these elements includes:
+The Task Layer provides the orchestration of the Integrations and should be grouped into units of useful work.  For instance logOn
 
+```
+Psuedo Code
+
+Exist.Integration
+if False
+   Start.Integration
+Put.Integration (username and password)
+Action.Integration (submit button)
+Get.Integration (validation)
+if Result
+   Throw Business Exception 
+```
 
 ## Business Steps/Recovery
 ### Business Steps
