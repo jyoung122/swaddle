@@ -43,4 +43,4 @@
 
 <!-- ABOUT THE PROJECT -->
 ## Beet.Integration
-![alt text](./framework/images/int.PNG)
+![alt text](/framework/images/int.png)
