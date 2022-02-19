@@ -48,7 +48,7 @@
 
 
 ## Integration
-The Definition Layer begins the actual work of the bot building process. It collects information about the various applications, screens, and elements from those screens that are used by the bot. The information includes:
+The Integration Layer begins the actual work of the bot building process. It collects information about the various applications, screens, and elements from those screens that are used by the bot. The information includes:
 
 - For each application use by the bot
   - For each screen, page, or panel use from the application
@@ -80,7 +80,6 @@ The Business Process Layer focuses on decision rules and navigation within the a
   - The resultant assessment condition(s) that is expected
   - The next step to follow (action to be taken) if the condition is true
   - Any messaging that should be displayed or delivered if the condition is true
--
 
 ### Recovery Steps
 Like the Business Process Layer, the Process Recovery Layer focuses on decision rules and navigation within the automation. However, these rules handled condition that occur when the normal step processes are not properly handled. Business rules should cover every expected occurrence that the bot can and should handle, but in those cases where they bot encounters something that is either not expected, or that cannot be handled, the Process Recovery Layer tells the bot what to do, and what steps to take next
