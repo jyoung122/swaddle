@@ -1,14 +1,4 @@
-
 <div id="top"></div>
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 
 
 <!-- PROJECT LOGO -->
@@ -43,9 +33,7 @@
 # Integration
 
 
-
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+![open issues](https://github.com/jyoung122/swaddlefy/blob/c19117f1f9b366d4314caa5374c2ff3943d74592/framework/images/int.png).
 
 
 
