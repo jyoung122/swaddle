@@ -62,9 +62,8 @@ This information is collected repetitively for each screen in each application u
 ## Task
 The Task Layer provides the orchestration of the Integrations and should be grouped into units of useful work.  For instance logOn
 
+**Psuedo Code**
 ```
-Psuedo Code
-
 Exist.Integration
 if False
    Start.Integration
@@ -74,6 +73,9 @@ Get.Integration (validation)
 if Result
    Throw Business Exception 
 ```
+<details><summary>UiPath Example</summary>
+  ![image](https://user-images.githubusercontent.com/23747570/154779806-267bbe58-27c2-4554-9ba6-ad3818c2e048.png)
+</details>
 
 ## Business Steps/Recovery
 ### Business Steps
