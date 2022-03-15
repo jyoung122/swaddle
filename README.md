@@ -64,12 +64,12 @@ Here's why:
 
 ### How We Help
 
-| **Feature** | Benefit |
+| **Features** | Benefit |
 | --- | --- |
-| **Beet.Framework** | Beetle is a minimal and flexible RPA framework that provides a robust set of features for RPA Development. |
-| **Beet.Wizards** | Use code wizards to handle template code faster. Use code formmatting to introduce standards.|
-| **Beet.Walker** | Identify and help eliminate errors and code smells. |
-| **Beet.Docs** | Generate accurate just in time technical design documents from source code. |
+| **Framework** | Beetle is a minimal and flexible RPA framework that provides a robust set of features for RPA Development. |
+| **Wizards** | Use code wizards to handle template code faster. Use code formmatting to introduce standards.|
+| **CodeWalker** | Identify and help eliminate errors and code smells. |
+| **DocIt** | Generate accurate just in time technical design documents from source code. |
 
 
 
@@ -99,25 +99,25 @@ Here's why:
 ## Roadmap
 
 - [x] UiPath
-  - [x] Beet.Framework
-  - [x] Beet.Wizards
-  - [x] Beet.Walkers
-  - [x] Beet.Docs   
+  - [x] Framework
+  - [x] Wizards
+  - [x] CodeWalker
+  - [x] DocIt   
 - [ ] Blue Prism
-  - [X] Beet.Framework
-  - [ ] Beet.Wizards
-  - [ ] Beet.Walkers
-  - [ ] Beet.Docs   
+  - [X] Framework
+  - [ ] Wizards
+  - [ ] CodeWalker
+  - [ ] DocIt
 - [ ] Automation Anywhere
-  - [ ] Beet.Framework
-  - [ ] Beet.Wizards
-  - [ ] Beet.Walkers
-  - [ ] Beet.Docs   
+  - [ ] Framework
+  - [ ] Wizards
+  - [ ] CodeWalker
+  - [ ] DocIt  
 - [ ] Kryon
-  - [ ] Beet.Framework
-  - [ ] Beet.Wizards
-  - [ ] Beet.Walkers
-  - [ ] Beet.Docs 
+  - [ ] Framework
+  - [ ] Wizards
+  - [ ] CodeWalker
+  - [ ] DocIt 
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
