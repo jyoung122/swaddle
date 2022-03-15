@@ -66,7 +66,7 @@ Here's why:
 
 | **Features** | Benefit |
 | --- | --- |
-| **Framework** | Beetle is a minimal and flexible RPA framework that provides a robust set of features for RPA Development. |
+| **Framework** | Framework is a minimal and flexible RPA framework that provides a robust set of features for RPA Development. |
 | **Wizards** | Use code wizards to handle template code faster. Use code formmatting to introduce standards.|
 | **CodeWalker** | Identify and help eliminate errors and code smells. |
 | **DocIt** | Generate accurate just in time technical design documents from source code. |
