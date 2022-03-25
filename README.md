@@ -34,7 +34,7 @@
   </ol>
 </details>
 
-<img src="/Images/logoLong.png" >
+<img src="/Images/logoLong.png" width="750px" >
 
 <!-- ABOUT THE PROJECT -->
 ## The drive to develop
